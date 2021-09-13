@@ -1839,6 +1839,30 @@ ul.howwework__descr li:after {
     padding-bottom: 0 !important;
 }
 
+.callback .twofform input:not([type="submit"]):focus {
+    border: 2px solid #94AAA7;
+}
+.callback .twofform input:not([type="submit"]) {
+    color: #1C1E23;
+}
+
+.callback .twofform input[type="submit"]:hover {
+    background: #F4D99C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 

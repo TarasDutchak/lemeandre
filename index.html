@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
+<body class="mainpage">
 
     <div class="page-wrapper">
         <header class="header">
@@ -96,7 +96,7 @@
                             <div class="welcome__buttons">
                                 <a href="#" class="whitebtn" data-toggle="modal" data-target="#contactus">Записатися на
                                     перегляд</a>
-                                <a href="#" class="transparentbtn">ПРЕЗЕНТАЦІЯ</a>
+                                <a href="#getpresentation" class="transparentbtn">ПРЕЗЕНТАЦІЯ</a>
                             </div>
                         </div>
                         <div class="welcome__bottomsect">
@@ -665,7 +665,7 @@
                 </div>
             </section>
 
-            <section class="youtact generalsect generalsect__green">
+            <section class="youtact generalsect generalsect__green" id="getpresentation">
                 <div class="container">
                     <h3>
                         ОТРИМАЙТЕ<br> ПРЕЗЕНТАЦІЮ ПРО<br> <span>Le</span>MEandre
@@ -1128,7 +1128,8 @@
                     </ul>
                     <ul>
                         <li><a href="#cont">Контакти</a></li>
-                        <li class="pagelink"><a href="#">Зворотній дзвінок</a></li>
+                        <li class="pagelink"><a href="#" data-toggle="modal" data-target="#contactus1">Зворотній
+                                дзвінок</a></li>
                     </ul>
                 </div>
                 <div class="footer__btns">
@@ -1196,7 +1197,36 @@
         </div>
     </div>
 
+    <div class="modal fade bigmodal" id="contactus1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/svg/closemodal.svg" alt="close">
+                </button>
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <div class="bigmodal__formsect">
+                            <p class="title">ЗАПИС
+                                НА ПЕРЕГЛЯД</p>
+                            <form action="" class="twofform">
+                                <input type="text" placeholder="ВАШЕ ІМ’Я">
+                                <input type="tel" class="telinp" placeholder="+380 /99/ 999 99 99 ">
+                                <input type="submit" value="НАДІСЛАТИ">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 imgcol">
+                        <div class="modalimg">
+                            <img src="img/modalpic.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
 
+
+            </div>
+        </div>
+    </div>
 
 
 

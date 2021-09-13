@@ -144,7 +144,7 @@ $(document).ready(function () {
 
     // menu scrollto
 
-    $(".header__nav ul li:not(.pagelink) a, .footer__nav ul li:not(.pagelink) a").on("click", function (event) {
+    $(".mainpage .header__nav ul li:not(.pagelink) a, .mainpage .footer__nav ul li:not(.pagelink) a,  .welcome .transparentbtn").on("click", function (event) {
         var headerHeight = 110;
         if ($(window).width() < 1651 && $(window).width() > 1024) {
             var headerHeight = 80;
@@ -161,6 +161,8 @@ $(document).ready(function () {
             scrollTop: top - headerHeight
         }, 1500);
     });
+
+    
 
     $('.burgerbtn').click(function () {
         $('.header__nav').addClass('show');
@@ -194,7 +196,7 @@ $(document).ready(function () {
         $('.footer__up a').click(function () {
             $('html, body').animate({
                 scrollTop: 0
-            }, 1500);
+            }, 1000);
             return false;
         })
 
