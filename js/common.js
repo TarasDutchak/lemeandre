@@ -39,11 +39,12 @@ $(document).ready(function () {
 
 
     //   More Plans
-
-    $('.moreplans').click(function () {
-        $(this).find('text').toggle();
-        $(this).parents('.popularplans').find('.popularplans-wrap').toggleClass('showall');
-    });
+    // ------------------------------------------------------
+    // $('.moreplans').click(function () {
+    //     $(this).find('text').toggle();
+    //     $(this).parents('.popularplans').find('.popularplans-wrap').toggleClass('showall');
+    // });
+      // ------------------------------------------------------
 
     $('.howwework-more').click(function () {
         $(this).find('text').toggle();
@@ -144,7 +145,7 @@ $(document).ready(function () {
 
     // menu scrollto
 
-    $(".mainpage .header__nav ul li:not(.pagelink) a, .mainpage .footer__nav ul li:not(.pagelink) a,  .welcome .transparentbtn").on("click", function (event) {
+    $(".mainpage .header__nav ul li:not(.pagelink) a, .mainpage .footer__nav ul li:not(.pagelink) a,  .welcome .transparentbtn, .welcome__address").on("click", function (event) {
         var headerHeight = 110;
         if ($(window).width() < 1651 && $(window).width() > 1024) {
             var headerHeight = 80;

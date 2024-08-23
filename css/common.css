@@ -258,14 +258,14 @@ img {
 
 .welcome__brand span {
     position: relative;
-    padding-left: 34px;
+    padding-left: 54px;
 }
 
 .welcome__brand span:before {
     display: inline-block;
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background: url('../img/svg/brand.svg') no-repeat center / 100%;
     position: absolute;
     left: 0;
@@ -367,16 +367,30 @@ img {
 }
 
 .welcome__soclist {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     width: 150px;
+}
+
+.footer .welcome__soclist {
+    width: 100%;
+}
+
+.welcome__soclist li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
 }
 
 .welcome__address {
     color: #C2C2C2;
     font-size: 20px;
     line-height: 27px;
+}
+
+.welcome__address:hover {
+    color: #F4D99C;
 }
 
 .welcome__address span {
@@ -665,7 +679,7 @@ img {
 }
 
 
-
+/* 
 .interior:after {
     content: '';
     display: block;
@@ -676,7 +690,7 @@ img {
     width: 100%;
     background-color: #fff;
     z-index: 1;
-}
+} */
 
 .interior>* {
     z-index: 2;
@@ -839,6 +853,14 @@ ul.howwework__descr li:after {
 
 .howwework {
     padding-bottom: 25px;
+}
+
+.howwework  h3 {
+    margin-bottom: 20px;
+}
+
+.howwework .invest__centerdescr {
+    margin-top: 0;
 }
 
 .howwework .invest__centerdescr {
@@ -1850,14 +1872,43 @@ ul.howwework__descr li:after {
     background: #F4D99C;
 }
 
+.fmlogo {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
 
+.popularplans .whitelink {
+    width: 420px;
+}
 
+@media(max-width:767.8px) {
+    .popularplans .whitelink {
+        width: 100%;
+        max-width: 100%;
+    }
+}
 
+.popularplans__imgwrap::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    background-color: rgba(28, 30, 35, 0.67);
+    background-image: url('../img/image-gallery.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: 0.5s;
+}
 
+.popularplans__imgwrap:hover::before {
+    opacity: 1;
 
-
-
-
+}
 
 
 
